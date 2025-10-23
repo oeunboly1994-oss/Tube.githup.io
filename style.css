@@ -597,6 +597,33 @@ body{
    .map{
     display: block;
     height: 800px;
+    & .store{
+        & .map1{
+            & img{
+                width: 100%;
+                height: 230px;
+            }
+        }
+        & .map2{
+            & a{
+                font-size: 15px;
+            }
+        }
+    }
+    & p{
+        font-size: 0.7rem;
+    }
+    & h1{
+        font-size: 1.5rem;
+    }
+    & span{
+        font-size: 15px;
+    }
+}
+.slideStore{
+    height: 90px;
+    & a{
+    padding: 0 10px;    }
 }
 .mapMini{
     display: none;
@@ -627,6 +654,37 @@ body{
     .store{
         display: flex;
     }
+    .map{
+    display: block;
+    height: 900px;
+    & .store{
+        & .map1{
+            & img{
+                width: 100%;
+                height: 300px;
+            }
+        }
+        & .map2{
+            & a{
+                font-size: 1.5rem;
+            }
+        }
+    }
+    & p{
+        font-size: 1rem;
+    }
+    & h1{
+        font-size: 1.5rem;
+    }
+    & span{
+        font-size: 1.5rem;
+    }
+}
+.slideStore{
+    height: 150px;
+    & a{
+    padding: 0 10px;    }
+}
  }
 
 /* // Large devices (desktops, 992px and up) */
@@ -685,7 +743,25 @@ body{
     .Home{
         display: none;
     }
-     
+     .map{
+        height: 1000px;
+        & h1{
+            font-size: 2rem;
+        }
+        & .store{
+            & .map1{
+                & img{
+                    width: 90%;
+                    height: 400px;
+                }
+            }
+        }
+     }
+     .slideStore{
+        height: 180px;
+        & a{
+        padding: 0 10px;    }
+     }
  }
 
 /* // X-Large devices (large desktops, 1200px and up) */
@@ -717,8 +793,14 @@ body{
         }
     }
      
-   
- }
+   .map{
+        height: 1050px;
+        & h1{
+            font-size: 3rem;
+        }
+    }
+   }
+ 
 
 
 /* // XX-Large devices (larger desktops, 1400px and up) */
@@ -766,7 +848,22 @@ body{
         margin-top: 7%;
     }
    }
-     
+    .map{
+        height: 1100px;
+        & h1{
+            font-size: 3rem;
+        }
+        & .store{
+            & .map1{
+                & img{
+                    width: 80%;
+                    height: 80%;
+                }
+            }
+        }
+     }
+     .slideStore{
+     }
  }
  @media (min-width: 1910px) {
     .slider{
