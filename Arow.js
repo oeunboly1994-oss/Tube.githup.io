@@ -3,7 +3,7 @@ const array =[
     {"name":"HOME","id":'#'},
     {"name":"MENU","id":'#menu'},
     {"name":"OUR STORE","id":'#store'},
-    {"name":"OUR STORY","id":'#'},
+    {"name":"OUR STORY","id":'#sty'},
 ];
 document.getElementById("bar").onclick=function(){
 var txt="";
