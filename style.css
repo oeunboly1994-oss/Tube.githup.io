@@ -1,8 +1,10 @@
 body{
     background-color: rgba(128, 128, 128, 0.294);
-    overflow-x: hidden;
+    max-width: 100%;
+    overflow-x: hidden; 
 
 }
+
 .head{
     height: 50px;
     display: flex;
@@ -883,15 +885,18 @@ transform: translate(0,-250px);
 }
 
 @media (min-width:300px) { 
-    body{
-        overflow-x: hidden;
-    }
+    
      .head2.show{
-        transform: translate(0,-250px);
+        display: none;
     }
+    .head2{
+        display: none;
+    }
+
     .head{
         z-index: 0;
-        height: 20px;
+        height: 100px;
+        transform: translate(0,-35px);
     }
     .menubar{
         height: 80px;
@@ -1357,10 +1362,17 @@ transform: translate(0,-250px);
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
     .head2.show{
+        display: flex;
+    }
+    .head2{
+        display: flex;
+    }
+    .head2.show{
         transform: translate(0,0.1px);
     }
     .head{
         height: 50px;
+        transform: translate(0,0px);
         /* position: sticky;z-index: 10; */
         /* top: 0; */
         background-color: white;
@@ -1528,7 +1540,7 @@ transform: translate(0,-250px);
 /* // XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) { 
     .slider{
-        width: 100%;
+        /* width: 100%; */
         height: 700px;
         & img{
             width: 100%;
@@ -1591,7 +1603,7 @@ transform: translate(0,-250px);
  }
  @media (min-width: 1910px) {
     .slider{
-        width: 100%;
+        /* width: 100%; */
         height: 800px;
         & img{
             width: 100%;
