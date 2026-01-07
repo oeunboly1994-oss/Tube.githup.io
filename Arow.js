@@ -78,3 +78,13 @@ function getImages(){
     });
         
     }
+
+  const message = document.getElementById("head2");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 130) {
+      message.classList.add("show");
+    } else {
+      message.classList.remove("show");
+    }
+  });
